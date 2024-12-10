@@ -1,0 +1,780 @@
+/* header */
+nav {
+    width: 100%;
+    background-color: #052f03;
+    padding: 10px 20px;
+  } */
+  
+  /* Style for the navigation list */
+   .nav__links {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style for the logo */
+  .nav__logo {
+    flex: 1; /* This will take up available space on the left */
+  }
+  
+  .nav__logo img {
+    width: 160px; /* Adjust logo size */
+  }
+  
+  /* Style for the navigation items */
+  .nav__item {
+    margin-left: 20px; /* Space between each menu item */
+    gap: 50px;
+  }
+  
+  /* Style for the links */
+  .nav__link {
+    text-decoration: none;
+    color: #fff; /* White text color */
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav__link:hover {
+    color: #f1f1f1; /* Change color on hover */
+  }
+
+  /* text */
+  .nine{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    
+}
+
+
+  /* form */
+
+  .meet-designer-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-image: url(assets/header-background.jpg); /* Replace with the path to your kitchen image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column; /* Default column layout for smaller screens */
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Default row layout */
+    justify-content: space-between;
+    width: 90%; /* Reduce width to fit smaller devices */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px; /* Add spacing between left and right content */
+}
+
+.hero-image {
+    flex: 1;
+    background-image: url('your-image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Default height for small screens */
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: flex-end; /* Align content to the bottom */
+    padding: 20px;
+    border-radius: 8px; /* Optional: rounded corners */
+    max-height: 1000px;
+}
+
+.hero-content h1 {
+    font-size: 2rem; /* Adjust size for smaller screens */
+    color: rgb(30, 8, 8);
+    text-align: left;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    max-width: 90%; /* Adjust width for better text flow */
+    line-height: 1.3;
+    white-space: normal;
+}
+
+.designer-form {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%; /* Adjust width to fit smaller devices */
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 95%; /* Ensure inputs stretch full width */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus, select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.phone-input {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Spacing between elements */
+}
+
+.phone-input select {
+    width: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ea1111;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .meet-designer-section {
+        height: auto; /* Let the content dictate height */
+        padding: 20px; /* Add padding for smaller screens */
+    }
+
+    .container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        gap: 40px; /* Add more spacing between sections */
+    }
+
+    .hero-image {
+        height: 250px; /* Reduce height for smaller devices */
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem; /* Reduce text size */
+        line-height: 1.4;
+    }
+
+    .designer-form {
+        width: 100%; /* Ensure form takes full width */
+        max-width: 90%; /* Keep form responsive */
+    }
+
+    button {
+        font-size: 0.9rem; /* Adjust button size */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.5rem; /* Further reduce text size */
+    }
+
+    .hero-image {
+        height: 200px; /* Adjust image height */
+    }
+
+    .designer-form {
+        padding: 15px; /* Reduce padding */
+    }
+
+    button {
+        padding: 10px; /* Adjust button padding */
+    }
+}
+
+  
+/* second block */
+/* Flexbox layout for image and text */
+.bio-container {
+    display: flex;
+    flex-direction: row; /* Default layout for larger screens */
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -11rem;
+    overflow: hidden; /* Prevent overflow during animation */
+    padding: 1rem;
+}
+
+.bio-image {
+    flex: 1;
+    padding-right: 1rem;
+    animation: fadeInLeft 1.5s ease; /* Animation for the image */
+    padding-top: 110px;
+    display: flex; /* Ensures proper alignment on smaller screens */
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-image img {
+    width: 100%;
+    max-width: 270px;
+    height: auto;
+    border-radius: 200px;
+    border: 4px solid #082567;
+    border-style: inset;
+    margin-top: 50px;
+    animation: bounceEffect 2s infinite; /* Subtle bounce effect for the image */
+}
+
+.bio-text {
+    flex: 2;
+    animation: fadeInRight 1.5s ease; /* Animation for the text */
+    text-align: left;
+}
+
+.bio-text h4 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+    margin-left: 40px;
+    font-weight: bolder;
+    color: black;
+    font-style: italic;
+    padding-top: 153px;
+}
+
+.bio-text p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-right: 100px;
+    margin-left: 40px;
+    color: black;
+    animation: textSlideUp 1.5s ease; /* Slide-up effect for the paragraph */
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .bio-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        margin-top: -5rem; /* Adjust spacing for smaller screens */
+    }
+
+    .bio-image {
+        padding-top: 20px;
+        padding-right: 0;
+    }
+
+    .bio-image img {
+        max-width: 200px; /* Scale down the image */
+        margin-top: 20px;
+    }
+
+    .bio-text {
+        text-align: center; /* Center-align text for smaller screens */
+        padding-top: 20px;
+    }
+
+    .bio-text h4 {
+        font-size: 30px; /* Reduce heading size */
+        padding-top: 0;
+        margin-left: 0;
+    }
+
+    .bio-text p {
+        font-size: 18px; /* Adjust paragraph font size */
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bio-container {
+        margin-top: 0; /* Remove negative margin for extra small screens */
+        padding: 1rem;
+    }
+
+    .bio-image img {
+        max-width: 150px; /* Further scale down the image */
+    }
+
+    .bio-text h4 {
+        font-size: 24px; /* Smaller heading size */
+    }
+
+    .bio-text p {
+        font-size: 16px; /* Adjust paragraph size */
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+/* Keyframes for animations */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounceEffect {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes textSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* 3rd block */
+
+/* 4rh block - services*/
+
+
+/* Keyframes for Sliding Animations */
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* margin-bottom: 50px; */
+}
+
+/* Heading Animation */
+.services-heading {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    /* padding-top: 70px; */
+    /* padding-bottom: 60px; */
+    color: black;
+    /* background-color: rgb(218, 207, 207); */
+    animation: slideInUp 1s ease-out;
+}
+
+/* Services Container */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 120px;
+    padding: 0 10px;
+    /* background-color: rgb(218, 207, 207); */
+    /* margin-bottom: 32px; */
+}
+
+/* Service Item Animation */
+.service-item {
+    text-align: center;
+    /* background-color: rgb(218, 207, 207); */
+    margin-right: -7px;
+}
+
+/* Image Styles */
+.service-item img {
+    width: 100%;
+    max-width: 170px;
+    height: auto;
+    border-radius: 7px;
+    box-shadow: 10px 10px 10px 10px rgba(56, 54, 54, 0.1);
+    /* background-color: white; */
+}
+
+/* Sliding Animation for Text */
+.service-item p {
+    /* margin-top: 20px; */
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    font-style: oblique;
+    /* margin-bottom: 100px; */
+    animation: slideInLeft 1.5s ease-in-out;
+}
+
+/* Special Text Animation */
+.Offered {
+    color: #1ca3bb;
+    animation: slideInRight 1.5s ease-in-out;
+}
+
+
+/* process block */
+
+/* Keyframes for Sequential Fade and Slide Animation */
+.process-heading {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    /* background-color:  rgb(242, 250, 253); */
+    /* padding-top: 30px;
+    padding-bottom: 50px; */
+    color: black;
+}
+
+/* Process Steps */
+.process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 10px;
+    /* background-color: rgb(242, 250, 253); */
+}
+
+/* Individual Step Styling */
+.step {
+    text-align: center;
+    max-width: 120px;
+    flex: 1;
+}
+
+/* Image Styling */
+.step img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+}
+
+/* Text Styling */
+.step p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    /* margin-bottom: 100px; */
+    opacity: 1;
+}
+.overview{
+    color: yellow;
+}
+
+
+/* last images */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.projects-heading {
+    text-align: center;
+    font-size: 50px;
+    /* margin-bottom: 20px; */
+    color: #0e0000;
+    /* padding-top: 20px; */
+    /* padding-bottom: 35px; */
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    padding: 0 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.project {
+    text-align: center;
+    max-width: 400px;
+    flex: 1;
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    /* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); */
+}
+
+.project img {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: zoomIn 1.5s ease-in-out; /* Animation added */
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+.project:hover img {
+    transform: translateY(-5px) scale(1.1); /* Zoom effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    /* animation: fadeInUp 1.5s ease-in-out; */
+}
+
+.project button{
+    margin-top: 10px;
+    padding: 4px 8px;
+    background-color:white;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    /* transition: background-color 0.3s ease, transform 0.2s ease; */
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.project button:hover {
+    background-color:red;
+    /* transform: translateY(-3px); */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* why choose us */
+
+/* General Styling */
+.why-choose-us {
+    display: flex;
+    flex-wrap: wrap; /* Ensure responsiveness */
+    align-items: flex-start;
+    gap: 40px; /* Space between heading and list */
+    padding: 20px;
+    background: #fff; /* White background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px 0;
+    margin-top: 50px;
+}
+
+/* Heading Styling */
+.why-choose-us h4 {
+    flex: 1;
+    font-size: 2rem; /* Larger font for emphasis */
+    font-weight: bold;
+    color: #000; /* Black text */
+    text-transform: uppercase; /* Add visual emphasis */
+    border-left: 5px solid #000; /* Black accent line */
+    padding-left: 15px; /* Space for border */
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* List Styling */
+.why-choose-us ul {
+    flex: 2;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between items */
+}
+
+.why-choose-us li {
+    font-size: 1.2rem;
+    color: black; /* Dark gray for readability */
+    font-weight: 500;
+    line-height: 1.8;
+    position: relative;
+    padding-left: 35px; /* Space for custom icon */
+    /* background: #f9f9f9; */
+    /* border-left: 3px solid #333;  */
+    /* padding: 10px 15px; */
+    border-radius: 6px;
+}
+
+.why-choose-us li::before {
+    content: '✔'; /* Custom checkmark */
+    color: #ada5a5; /* Black icon */
+    font-size: 1.5rem;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .nav__logo img {
+        width: 100px; /* Further scale down logo */
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem; /* Smaller font for smaller devices */
+    }
+
+    .bio-text h4 {
+        font-size: 1.2rem;
+    }
+
+    .services-heading, .process-heading, .projects-heading {
+        font-size: 2rem; /* Smaller heading font */
+    }
+
+    .service-item img, .project img {
+        max-width: 100%; /* Adjust width for smaller screens */
+    }
+
+    .step {
+        flex: 1 1 calc(50% - 10px); /* Two steps per row on small screens */
+    }
+
+    .project {
+        flex: 1 1 100%; /* Single column for very small devices */
+        max-width: 100%;
+    }
+
+    .why-choose-us ul {
+        flex-direction: column; /* Stack list items */
+        gap: 10px;
+    }
+}
